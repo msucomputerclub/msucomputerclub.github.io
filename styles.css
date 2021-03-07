@@ -11030,10 +11030,6 @@ body {
   }
 }
 
-.eboard {
-  padding: 0px;
-  margin: 0px;
-}
 
 h1,
 h2,
@@ -11059,7 +11055,7 @@ p.lead {
     "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   text-transform: uppercase;
   font-weight: 500;
-  font-size: 1.5rem;
+  font-size: 2.5rem;
 }
 
 #sideNav .navbar-nav .nav-item .nav-link {
@@ -11153,6 +11149,7 @@ section.resume-section {
   padding-top: 5rem;
   padding-bottom: 5rem;
   max-width: 75rem;
+  font-size: 2rem;
 }
 
 section.resume-section .resume-section-content {
