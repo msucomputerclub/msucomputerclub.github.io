@@ -1,0 +1,29 @@
+$red:#d1190d;
+$black:#333333;
+$white: #ffffff;
+
+.container {
+    background-image: 
+        linear-gradient(rgba(0, 0, 0, 0) 50%, rgba(255, 255, 255, 1) 100%),
+        url("../../Assets/Images/1500.jpg");;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+    height:100vh;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    
+    h1 {
+        font-size: 3rem;
+        position: relative;
+        color: $red;
+        background-color: #ffffff;
+        top: -100px;
+        padding: 20px;
+        border-radius: 2rem;
+        width: auto;
+        height: auto;
+    }
+}
