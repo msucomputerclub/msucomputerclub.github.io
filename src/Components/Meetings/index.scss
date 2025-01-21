@@ -1,0 +1,45 @@
+$red:#d1190d;
+$black:#333333;
+$white: #ffffff;
+
+.meetings {
+    height: fit-content;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    
+    h1 {
+        font-size: 4rem;
+        color:$white;
+        background-color: $red;
+        padding:1rem;
+        border-radius: 1rem;
+        margin: 3rem;
+    }
+}
+
+.meetings-text {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: fit-content;
+    padding: 1rem;
+    width: 80vw;
+    border: $red 2px solid;
+    border-radius: 1rem;
+
+    p {
+        font-size: 1.75rem;
+    }
+    a {
+        text-decoration: none;
+        color: #d1190d;
+    }
+
+    a:hover {
+        color: $white;
+        text-shadow: -1px -1px 0 $red, 1px -1px 0 $red, -1px 1px 0 $red, 1px 1px 0 $red;
+    }
+}
