@@ -4,6 +4,7 @@ import Header from './Components/Header';
 import Home from './Components/Home';
 import About from "./Components/About";
 import Meetings from "./Components/Meetings";
+import Announcements from "./Components/Announcements";
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
       <div className="calendar-container">
         <Calendar></Calendar>
       </div>
+      <Announcements></Announcements>
     </div>
   );
 }
