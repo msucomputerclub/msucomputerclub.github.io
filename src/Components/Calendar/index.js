@@ -29,13 +29,13 @@ const MyCalendar = () => {
   };
 
   return (
-    <div style={{ height: 500 }}>
+    <div style={{ height: "100%" }}>
       <Calendar
         localizer={localizer}
         events={events}
         startAccessor="start"
         endAccessor="end"
-        style={{ height: '70vh', width: '70vw' }}
+        style={{ height: '70vh', width: '70vw', fontSize:"1.5rem" }}
         onSelectEvent={clickHandler}
       />
 
