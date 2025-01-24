@@ -13,10 +13,10 @@ const Socials = () => {
                 <a href="https://www.linkedin.com/company/montclair-state-university-computing-club/" target={"_blank"} rel="noreferrer">
                     <FontAwesomeIcon className="icon" icon={faLinkedin}/>
                 </a>
-                <a href="" target={"_blank"} rel="noreferrer">
+                <a href="https://discord.com/invite/czpPCeNpah" target={"_blank"} rel="noreferrer">
                     <FontAwesomeIcon className="icon" icon={faDiscord}/>
                 </a>
-                <a href="instagram://user?username=msucomputingclub" onclick="window.location.href='https://www.instagram.com/msucomputingclub'" target={"_blank"} rel="noreferrer">
+                <a href="https://www.instagram.com/msucomputingclub" target={"_blank"} rel="noreferrer">
                     <FontAwesomeIcon className="icon" icon={faInstagram}/>
                 </a>
 

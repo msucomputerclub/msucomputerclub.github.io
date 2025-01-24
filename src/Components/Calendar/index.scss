@@ -27,4 +27,10 @@
     background-color: #d1190d;
 }
 
+.rbc-event {
+    background-color: rgb(209, 25, 13);
+}
 
+.rbc-event.rbc-selected, .rbc-day-slot .rbc-selected.rbc-background-event {
+    background-color: gray;
+}
