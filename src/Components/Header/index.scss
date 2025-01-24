@@ -14,14 +14,24 @@ $white: #ffffff;
     padding: 20px;
     flex-direction: row;
     justify-content: space-between;
-    align-items: flex-start;
+    align-items: center;
     top: 0;
     left: 0;
     right: 0;
-    z-index: 1000;
+    z-index: 15;
     background-color: $red;
     position: fixed;
     width: 100%;
+
+    .logo {
+        text-decoration: none;
+        height: 13vh;
+        width: auto;
+
+        img {
+            height: 100%;
+        }
+    }
 }
 
 h1 {
@@ -45,7 +55,7 @@ h1 {
     a {
         text-decoration: none;
         color: $white;
-        font-size: 2vw;
+        font-size: 2rem;
         font-weight: 200; 
         position: relative;
         font-family: "Jersey 15", "Poppins";
@@ -66,4 +76,90 @@ h1 {
     a:hover::before {
         width: 100%;
     }
+
 }
+
+.menu {
+    display: none;
+}
+
+@media (max-width:900px){
+
+    .content {
+        align-items: center;
+        justify-content: center;
+        gap:20%
+    }
+
+    .buttons {
+        display:none;
+    }
+
+    .menu {
+        width: 58px;
+        background: transparent;
+        height: 58px;
+        display: flex;
+        align-items: center;
+        cursor: pointer;
+        color: #fff ;
+        font-size: 2.5rem;
+    }
+        .menu-container {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: fixed;
+            width: 100vw;
+            height: 100vh;
+            background-color: #d1190d;
+            color: #fff;    
+            flex-direction: column;
+            z-index: 10;
+            bottom: 0;
+            top: 0;
+            
+    
+            .motion-a{ 
+                display: inline-flex;
+                color: #fff;
+                text-decoration: none;
+                height: 80px;
+                overflow: hidden;
+                font-size: 24px;
+                text-transform: uppercase;
+                margin-top: 50px;
+    
+            }
+            .motion-a:hover {
+                color: #333333;
+                cursor: pointer;
+            }
+    
+            +.motion-a {
+                margin-top: 0;
+    
+            }
+    
+            .btn-close {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                justify-content: center;
+                width: 45px;
+                height: 45px;
+                border: 2px solid #fff;
+                border-radius: 58px;
+                top:10vw;
+                right: 20vw;
+                z-index: 15;
+                position: absolute;
+                cursor: pointer;
+            }
+        }
+    
+}
+
+body.no-scroll {
+    overflow: hidden;
+  }

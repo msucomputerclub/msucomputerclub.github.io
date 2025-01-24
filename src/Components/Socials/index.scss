@@ -41,4 +41,26 @@
     }
 }
 
+@media (max-width:900px){
+
+    .socials {
+        h1{
+            font-size: 2rem;
+        }
+        p{
+                
+            font-size: 1.25rem;
+            margin-bottom: 10px;
+        }
+    }
+    .links {
+        margin-top: 3rem;
+        gap: 3rem;
+
+        .icon {
+            font-size: 3rem;
+        }
+    }
+}
+
 

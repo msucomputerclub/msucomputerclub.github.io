@@ -33,3 +33,16 @@ $white: #ffffff;
     margin-top: 25vh;
 }
 
+
+
+@media (max-width: 900px) {
+    .container {
+        height: 50vh;
+        width: 100vw;
+        background-position: center;
+    }
+
+    .typing {
+        margin-top: 15vh;
+    }
+}

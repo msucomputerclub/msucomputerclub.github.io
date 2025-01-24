@@ -56,3 +56,21 @@ $border:1rem;
     }
 
 }
+
+@media (max-width:900px) {
+    .about {
+        width:100vw;
+
+        .about-text {
+            width: 90vw;
+            h1 {
+                font-size: 1.75rem;
+            }
+            p, li {
+                font-size: 1.33rem;
+            }
+        }
+    }
+
+
+}

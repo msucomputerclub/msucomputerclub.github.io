@@ -84,10 +84,11 @@
     }
 }
 
-@media (max-width:768){
+@media (max-width:900){
+    
     .face-container {
-        height: 10em;
-        width: 10em;
+        height: 10vw;
+        width: 10vw;
     }
     .name {
         font-size: 1.25em;
@@ -96,12 +97,13 @@
         font-size: 3em;
         font-weight: 700;
     }
+    
 }
 
 @media (max-width: 480px) {
     .face-container {
-        height: 8em;
-        width: 8em;
+        height: 6em;
+        width: 6em;
     }
     .name {
         font-size: 1em;
@@ -111,6 +113,12 @@
         font-weight: 700;
     }
     .face-cards {
-        gap: 2em; /* Smaller gap for smaller screens */
+        gap: 1em; /* Smaller gap for smaller screens */
+        width: 90vw;
     }
+
+    .job-title {
+        font-size: 1em;
+    }
+    
 }

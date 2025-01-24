@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { Calendar, momentLocalizer } from 'react-big-calendar';
 import moment from 'moment';
 import Modal from '@mui/material/Modal';
@@ -32,6 +32,19 @@ const MyCalendar = () => {
   const [open, setOpen] = useState(false); 
   const [selectedImage, setSelectedImage] = useState(null); 
 
+  const [resize, setResize] = useState(window.innerWidth < 900);
+  useEffect(() => {
+      const handleResize = () => {
+          setResize(window.innerWidth < 900); // Update state based on window size
+      };
+
+      window.addEventListener("resize", handleResize); // Add resize event listener
+
+      return () => {
+          window.removeEventListener("resize", handleResize); // Clean up listener on unmount
+      };
+  }, []);
+
 
   const clickHandler = (event) => {
     if (event.png) {
@@ -47,7 +60,7 @@ const MyCalendar = () => {
         events={events}
         startAccessor="start"
         endAccessor="end"
-        style={{ height: '70vh', width: '70vw', fontSize:"1.5rem", color:"#ffffff" }}
+        style={{ height: resize? '50vh':'70vh', width: resize? '90vw':'70vw', fontSize: resize? "1rem":"1.5rem", color:"#ffffff" }}
         onSelectEvent={clickHandler}
       />
 
@@ -67,7 +80,7 @@ const MyCalendar = () => {
           <img
             src={selectedImage}
             alt="Event"
-            style={{ maxWidth: '100%', maxHeight: '100%' }}
+            style={{ maxWidth: resize? '100vw':'100%', maxHeight: '100%' }}
           />
         </Box>
       </Modal>
