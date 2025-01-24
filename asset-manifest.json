@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/computing-club-website/static/css/main.eb2387e8.css",
-    "main.js": "/computing-club-website/static/js/main.f3676035.js",
+    "main.js": "/computing-club-website/static/js/main.10caca27.js",
     "static/js/358.4efc4b8a.chunk.js": "/computing-club-website/static/js/358.4efc4b8a.chunk.js",
     "static/media/alex.jpg": "/computing-club-website/static/media/alex.89441941a6de8602de68.jpg",
     "static/media/1500.jpg": "/computing-club-website/static/media/1500.e181818d76bccfc5feca.jpg",
@@ -11,11 +11,11 @@
     "static/media/computing-club-logo-white.png": "/computing-club-website/static/media/computing-club-logo-white.033b1e01536e0db22163.png",
     "index.html": "/computing-club-website/index.html",
     "main.eb2387e8.css.map": "/computing-club-website/static/css/main.eb2387e8.css.map",
-    "main.f3676035.js.map": "/computing-club-website/static/js/main.f3676035.js.map",
+    "main.10caca27.js.map": "/computing-club-website/static/js/main.10caca27.js.map",
     "358.4efc4b8a.chunk.js.map": "/computing-club-website/static/js/358.4efc4b8a.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.eb2387e8.css",
-    "static/js/main.f3676035.js"
+    "static/js/main.10caca27.js"
   ]
 }
