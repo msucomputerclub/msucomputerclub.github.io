@@ -16,7 +16,7 @@ const Socials = () => {
                 <a href="" target={"_blank"} rel="noreferrer">
                     <FontAwesomeIcon className="icon" icon={faDiscord}/>
                 </a>
-                <a href="https://www.instagram.com/msucomputingclub?igsh=MWx1MHJxaXMzN2JvdA==" target={"_blank"} rel="noreferrer">
+                <a href="instagram://user?username=msucomputingclub" onclick="window.location.href='https://www.instagram.com/msucomputingclub'" target={"_blank"} rel="noreferrer">
                     <FontAwesomeIcon className="icon" icon={faInstagram}/>
                 </a>
 

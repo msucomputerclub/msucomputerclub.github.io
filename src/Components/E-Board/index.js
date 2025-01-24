@@ -5,6 +5,19 @@ import Alex from "../../Assets/Images/alex.jpg"
 import Tyler from "../../Assets/Images/tyler.jpg"
 
 const Eboard = () => {
+    
+
+    function openCustomOrWebLink(customURL, webFallbackURL) {
+        window.open(webFallbackURL, "_blank")
+        window.open(customURL);
+        
+      }
+
+    const isMobile = () => {
+        return /Mobi|Android|iPhone|iPad|iPod|Windows Phone|BlackBerry|webOS/i.test(navigator.userAgent);
+    };
+
+
     return (
         <div className="team">
             
@@ -23,7 +36,11 @@ const Eboard = () => {
                     </div>
                 </div>
                 <div className="face-card">
-                    <a className="face-container" rel="noreferrer" href="https://www.linkedin.com/in/alexander-crespo-3abb12152/" target={"_blank"}>
+                    <a 
+                        className="face-container" 
+                        rel="noreferrer" 
+                        href="https://www.linkedin.com/in/alexander-crespo-3abb12152/" 
+                        target={"_blank"}>
                         <img className="headshot"src={Alex} alt="" />
                     </a>
                     <span className="name">Alexander Crespo</span>
@@ -33,7 +50,20 @@ const Eboard = () => {
                     </div>
                 </div>
                 <div className="face-card">
-                    <a className="face-container" rel="noreferrer" href="https://www.linkedin.com/in/kevin-calle-76a650197/" target="_blank">
+                    <a 
+                        className="face-container" 
+                        rel="noreferrer" 
+                        href="https://www.linkedin.com/in/kevin-calle-76a650197/" 
+                        onClick={(e) => {
+                            if(isMobile()){
+                                e.preventDefault();
+                                openCustomOrWebLink(
+                                    "linkedin://in/kevin-calle-76a650197", 
+                                    "https://www.linkedin.com/in/kevin-calle-76a650197/")
+                                }
+                            }
+                        } 
+                        target="_blank">
                         <img className="headshot"src={Kevin} alt="" />
                     </a>
                     <span className="name">Kevin Calle</span>
