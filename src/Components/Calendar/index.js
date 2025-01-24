@@ -23,7 +23,37 @@ const events = [
   {
     title: 'ARM Workshop 1',
     start: new Date(2025, 1, 6, 17, 30),
-    end: new Date(2025, 1, 4, 19, 30),
+    end: new Date(2025, 1, 6, 19, 0),
+    png: process.env.PUBLIC_URL + '/Images/arm-flyer.png', 
+  },
+  {
+    title: 'ARM Workshop 2',
+    start: new Date(2025, 1, 20, 17, 30),
+    end: new Date(2025, 1, 20, 19, 0),
+    png: process.env.PUBLIC_URL + '/Images/arm-flyer.png', 
+  },
+  {
+    title: 'ARM Workshop 3',
+    start: new Date(2025, 2, 6, 17, 30),
+    end: new Date(2025, 2, 6, 19, 0),
+    png: process.env.PUBLIC_URL + '/Images/arm-flyer.png', 
+  },
+  {
+    title: 'ARM Workshop 4',
+    start: new Date(2025, 2, 20, 17, 30),
+    end: new Date(2025, 2, 20, 19, 0),
+    png: process.env.PUBLIC_URL + '/Images/arm-flyer.png', 
+  },
+  {
+    title: 'ARM Workshop 5',
+    start: new Date(2025, 3, 3, 17, 30),
+    end: new Date(2025, 3, 3, 19, 0),
+    png: process.env.PUBLIC_URL + '/Images/arm-flyer.png', 
+  },
+  {
+    title: 'ARM Workshop 6',
+    start: new Date(2025, 3, 17, 17, 30),
+    end: new Date(2025, 3, 17, 19, 30),
     png: process.env.PUBLIC_URL + '/Images/arm-flyer.png', 
   }
 ];
