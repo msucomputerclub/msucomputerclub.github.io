@@ -38,12 +38,12 @@ const Header = () => {
             <h1>MSU Computing Club</h1>
             <div className="buttons">
                 
-                <a href="#Home">Home</a>
-                <a href="#About">About</a>
-                <a href="#Meetings">Meetings</a>
-                <a href="#Announcements">Announcements</a>
-                <a href="#E-Board">E-Board</a>
-                <a href="#Socials">Socials</a>
+                <a href="#home">Home</a>
+                <a href="#about">About</a>
+                <a href="#meetings">Meetings</a>
+                <a href="#calendar">Calendar</a>
+                <a href="#e-board">E-Board</a>
+                <a href="#socials">Socials</a>
             </div>
     </motion.div>
     );

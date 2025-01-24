@@ -14,6 +14,18 @@ const events = [
     end: new Date(2025, 1, 6, 17, 0),
     png: '/Images/Back.png', 
   },
+  {
+    title: 'Good Bear Speakers',
+    start: new Date(2025, 1, 4, 15, 0),
+    end: new Date(2025, 1, 4, 17, 0),
+    png: '/Images/goodbear-flyer.png', 
+  },
+  {
+    title: 'ARM Workshop 1',
+    start: new Date(2025, 1, 6, 17, 30),
+    end: new Date(2025, 1, 4, 19, 30),
+    png: '/Images/arm-flyer.png', 
+  }
 ];
 
 const MyCalendar = () => {
@@ -35,7 +47,7 @@ const MyCalendar = () => {
         events={events}
         startAccessor="start"
         endAccessor="end"
-        style={{ height: '70vh', width: '70vw', fontSize:"1.5rem" }}
+        style={{ height: '70vh', width: '70vw', fontSize:"1.5rem", color:"#ffffff" }}
         onSelectEvent={clickHandler}
       />
 

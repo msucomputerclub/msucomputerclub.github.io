@@ -12,9 +12,7 @@ $white: #ffffff;
     h1 {
         font-size: 4rem;
         color:$white;
-        background-color: $red;
         padding:1rem;
-        border-radius: 1rem;
         margin: 3rem;
     }
 }
@@ -29,6 +27,7 @@ $white: #ffffff;
     width: 80vw;
     border: $red 2px solid;
     border-radius: 1rem;
+    color: $white;
 
     p {
         font-size: 1.75rem;
@@ -36,10 +35,5 @@ $white: #ffffff;
     a {
         text-decoration: none;
         color: #d1190d;
-    }
-
-    a:hover {
-        color: $white;
-        text-shadow: -1px -1px 0 $red, 1px -1px 0 $red, -1px 1px 0 $red, 1px 1px 0 $red;
     }
 }

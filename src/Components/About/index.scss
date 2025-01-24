@@ -5,33 +5,29 @@ $border:1rem;
 .about {
     margin-top: 5rem;
     display: flex;
-    height: 100vh;
+    height: auto;
     align-items: center;
     justify-content: flex-start;
-    flex-direction: column;
-
-    
+    flex-direction: column; 
 
 }
 
 .ABOUTUS {
-    background-color: $red;
     color: #ffffff;
     padding: 1rem;
     font-size: 4rem;
-    border-radius: $border;
-    margin-bottom:3rem;
     left: 0;
 }
 
 .about-text {
     width: 80vw;
-    height: fit-content;
     flex-direction: column;
     display: flex;
     align-items: center;
     justify-content: center;
-    border: #d1190d 2px solid;
+    color: #ffffff;
+    background-color: $black;
+    border:$white 2px solid;
     border-radius: $border;
     padding: 20px 30px;
 
@@ -50,7 +46,7 @@ $border:1rem;
 
     h1 {
         font-size: 3rem;
-        color: $black;
+        color: $white;
         margin:0;
     }
 

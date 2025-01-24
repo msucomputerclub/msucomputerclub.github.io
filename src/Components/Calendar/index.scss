@@ -1,2 +1,29 @@
 @import 'react-big-calendar/lib/sass/styles';
 
+.rbc-toolbar-label {
+    font-size: 3rem;
+    color: white;
+}
+
+.rbc-btn-group button{
+    font-size: 1rem;
+    color: white;
+}
+
+.rbc-button-link {
+    font-size: 1rem;
+    color:white;
+}
+
+.rbc-off-range-bg {
+    background: rgba(229.5, 229.5, 229.5, 0.5);
+}
+
+.rbc-header {
+    color: white;
+}
+
+.rbc-today {
+    background-color: #d1190d;
+}
+
