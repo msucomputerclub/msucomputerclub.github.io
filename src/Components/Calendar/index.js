@@ -12,19 +12,19 @@ const events = [
     title: 'Pizza Social',
     start: new Date(2025, 1, 6, 16, 0),
     end: new Date(2025, 1, 6, 17, 0),
-    png: '/Images/Back.png', 
+    png: process.env.PUBLIC_URL + '/Images/Back.png', 
   },
   {
     title: 'Good Bear Speakers',
     start: new Date(2025, 1, 4, 15, 0),
     end: new Date(2025, 1, 4, 17, 0),
-    png: '/Images/goodbear-flyer.png', 
+    png: process.env.PUBLIC_URL + '/Images/goodbear-flyer.png', 
   },
   {
     title: 'ARM Workshop 1',
     start: new Date(2025, 1, 6, 17, 30),
     end: new Date(2025, 1, 4, 19, 30),
-    png: '/Images/arm-flyer.png', 
+    png: process.env.PUBLIC_URL + '/Images/arm-flyer.png', 
   }
 ];
 
