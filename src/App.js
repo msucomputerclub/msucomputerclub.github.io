@@ -27,7 +27,7 @@ function App() {
         <Eboard></Eboard>
       </div>
       <div id="socials">
-        <Socials id="socials"></Socials>
+        <Socials></Socials>
       </div>
     </div>
   );
