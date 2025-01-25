@@ -53,13 +53,13 @@ const Eboard = () => {
                     <a 
                         className="face-container" 
                         rel="noreferrer" 
-                        href="https://www.linkedin.com/in/kevin-calle-76a650197/" 
+                        href="https://www.linkedin.com/in/kevincalle/" 
                         onClick={(e) => {
                             if(isMobile()){
                                 e.preventDefault();
                                 openCustomOrWebLink(
                                     "linkedin://in/kevin-calle-76a650197", 
-                                    "https://www.linkedin.com/in/kevin-calle-76a650197/")
+                                    "https://www.linkedin.com/in/kevincalle")
                                 }
                             }
                         } 
