@@ -7,6 +7,34 @@ import "./index.scss";
 
 const localizer = momentLocalizer(moment);
 
+const generateRecurringEvents = (startDate, recurrenceRule, totalOccurrences) => {
+  const events = [];
+  let currentDate = moment(startDate);
+
+  for (let i = 0; i < totalOccurrences; i++) {
+    events.push({
+      title: `General Body Meeting ${i + 1}`,
+      start: currentDate.toDate(),
+      end: currentDate.add(1, 'hour').toDate(), // Adjust the duration as needed
+      png: process.env.PUBLIC_URL + '/Images/gbm-flyer.png', // Replace with actual image URL
+    });
+
+    // Update currentDate based on recurrence rule
+    if (recurrenceRule === 'monthly') {
+      currentDate.subtract(1,'hour');
+      currentDate.add(1, 'month');
+    } else if (recurrenceRule === 'weekly') {
+      currentDate.subtract(1,'hour')
+      currentDate.add(1, 'week');
+    } else if (recurrenceRule === 'daily') {
+      currentDate.subtract(1,'hour')
+      currentDate.add(1, 'day');
+    }
+  }
+
+  return events;
+};
+
 const events = [
   {
     title: 'Pizza Social',
@@ -55,7 +83,8 @@ const events = [
     start: new Date(2025, 3, 17, 17, 30),
     end: new Date(2025, 3, 17, 19, 30),
     png: process.env.PUBLIC_URL + '/Images/arm-flyer.png', 
-  }
+  },
+  ...generateRecurringEvents(new Date(2025, 1, 6, 16,0), 'weekly', 12) ,
 ];
 
 const MyCalendar = () => {
