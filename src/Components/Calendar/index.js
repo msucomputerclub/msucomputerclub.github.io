@@ -38,8 +38,8 @@ const generateRecurringEvents = (startDate, recurrenceRule, totalOccurrences) =>
 const events = [
   {
     title: 'Pizza Social',
-    start: new Date(2025, 0, 30, 16, 0),
-    end: new Date(2025, 0, 30, 17, 0),
+    start: new Date(2025, 1, 6, 16, 0),
+    end: new Date(2025, 1, 6, 17, 0),
     png: process.env.PUBLIC_URL + '/Images/Back.png', 
   },
   {
