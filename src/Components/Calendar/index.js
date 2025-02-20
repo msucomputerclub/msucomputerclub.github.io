@@ -51,7 +51,7 @@ const events = [
   {
     title: "Intro to React: Coding Your Personal Website",
     start: new Date(2025, 1, 27, 15, 0),
-    end: new Date(2025, 1, 27, 17, 0),
+    end: new Date(2025, 1, 27, 17, 30),
     png:
       process.env.PUBLIC_URL +
       "/Images/Intro-to-React-Crafting-Your-Personal-Website.png",
@@ -59,9 +59,10 @@ const events = [
   {
     title: "Intro to React: Coding Your Personal Website",
     start: new Date(2025, 2, 6, 15, 0),
-    end: new Date(2025, 2, 6, 17, 0),
+    end: new Date(2025, 2, 6, 17, 30),
     png:
-      process.env.PUBLIC_URL + "/Images/Intro-to-React-Crafting-Your-Personal-Website.png",
+      process.env.PUBLIC_URL +
+      "/Images/Intro-to-React-Crafting-Your-Personal-Website.png",
   },
   {
     title: "ARM Workshop 1",
