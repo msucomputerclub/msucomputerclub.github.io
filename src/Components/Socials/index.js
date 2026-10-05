@@ -13,7 +13,7 @@ const Socials = () => {
                 <a href="https://www.linkedin.com/company/montclair-state-university-computing-club/" target={"_blank"} rel="noreferrer">
                     <FontAwesomeIcon className="icon" icon={faLinkedin}/>
                 </a>
-                <a href="https://discord.com/invite/czpPCeNpah" target={"_blank"} rel="noreferrer">
+                <a href="https://discord.gg/unSmeGePJ" target={"_blank"} rel="noreferrer">
                     <FontAwesomeIcon className="icon" icon={faDiscord}/>
                 </a>
                 <a href="https://www.instagram.com/msucomputingclub" target={"_blank"} rel="noreferrer">
